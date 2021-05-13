@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlVar1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/weatherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getTermperatureButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/getTermperatureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:fontFamily="monospace"
+        android:text="Get Temperature"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#C40FE3" />
+
+    <Button
+        android:id="@+id/current_location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getTermperatureButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="CURRENT LOCATION TEMPERATURE"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#C40FE3" />
+
+    <EditText
+        android:id="@+id/getLocationEdtTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Enter City"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/img_view_pokemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/kill_music_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:srcCompat="@android:drawable/ic_media_pause" />
+
+    <TextView
+        android:id="@+id/textView_kill_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@id/kill_music_imageView"
+        android:text="Kill Music"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/textView_kill_music"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="RESET"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/nextActvityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@id/current_location_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:fontFamily="monospace"
+        android:text="More Weather Info"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    tools:context=".MoreInfoMainActivity">
+
+    <TextView
+        android:id="@+id/TempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TempIconImageView"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/TempIconImageView"
+        android:background="@color/purple_200"
+        android:fontFamily="serif-monospace"
+        android:text="TEMPERATURE:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/WeatherDesccriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/TempTextView"
+        android:layout_alignBottom="@id/WeatherDescriptionImageView"
+        android:layout_marginBottom="15dp"
+        android:background="#BDD6D6"
+        android:fontFamily="serif-monospace"
+        android:text="DESCRIPTION:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/HumididtyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/WeatherDesccriptionTextView"
+        android:layout_alignBottom="@id/HumidityImageView"
+        android:layout_marginBottom="15dp"
+        android:background="#40F4B5"
+        android:fontFamily="serif-monospace"
+        android:text="HUMIDITY:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/PrecipitationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/HumididtyTextView"
+        android:layout_alignBottom="@id/PrecipitationImageView"
+        android:layout_marginBottom="25dp"
+        android:background="#44D5E8"
+        android:fontFamily="serif-monospace"
+        android:text="PRECIPITATION:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/TempIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/thermometre" />
+
+    <TextView
+        android:id="@+id/SunRiseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/PrecipitationTextView"
+        android:layout_alignBottom="@id/SunRiseImageView"
+        android:layout_marginBottom="15dp"
+        android:background="#E4F358"
+        android:fontFamily="serif-monospace"
+        android:text="SUN RISE:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SunSetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/SunRiseTextView"
+        android:layout_alignBottom="@id/SunSetImageView"
+        android:layout_marginBottom="15dp"
+        android:background="#EFAD4C"
+        android:fontFamily="serif-monospace"
+        android:text="SUN SET:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/WeatherDescriptionImageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/TempIconImageView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/cloud_128" />
+
+    <ImageView
+        android:id="@+id/HumidityImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WeatherDescriptionImageView"
+        android:layout_alignLeft="@id/TempIconImageView"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/iconfinder_blood_drop_drop_droplet_oil_drop_water_drop__4753012" />
+
+    <ImageView
+        android:id="@+id/PrecipitationImageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/HumidityImageView"
+        android:layout_alignLeft="@id/WeatherDescriptionImageView"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/umbrella" />
+
+    <ImageView
+        android:id="@+id/SunRiseImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/PrecipitationImageView"
+        android:layout_alignLeft="@id/TempIconImageView"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/icon_sunrise_128" />
+
+    <ImageView
+        android:id="@+id/SunSetImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/SunRiseTextView"
+        android:layout_alignLeft="@id/SunRiseImageView"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/icon_sunset_128" />
+
+    <Button
+        android:id="@+id/CurrentLocationWeatherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/TempTextView"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:text="GET CURRENT LOCATION WEATHER"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset_activity2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/CurrentLocationWeatherButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#000000"
+        android:fontFamily="monospace"
+        android:text="RESET"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:backgroundTint="#000000" />
+
+    <TextView
+        android:id="@+id/temp_ans_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/TempTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/TempTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sunSet_ans_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/SunSetTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/SunSetTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sunRise_ans_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/SunRiseTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/SunRiseTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/prepicipitation_ans_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/PrecipitationTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/PrecipitationTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/humidity_ans_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/HumididtyTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/HumididtyTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_answer_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/WeatherDesccriptionTextView"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/WeatherDesccriptionTextView"
+        android:fontFamily="serif-monospace"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/goBack_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SunSetTextView"
+        android:layout_alignLeft="@id/SunSetTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="GO BACK"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
